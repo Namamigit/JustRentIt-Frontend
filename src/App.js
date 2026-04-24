@@ -1,7 +1,12 @@
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars
+
 import { useState } from "react";
 
 
+
 function App() {
+
 
     const [loggedIn, setLoggedIn] = useState(false);
     const [isSignup, setIsSignup] = useState(false);
