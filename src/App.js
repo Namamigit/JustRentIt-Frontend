@@ -11,9 +11,10 @@ function App() {
     const [loggedIn, setLoggedIn] = useState(false);
     const [isSignup, setIsSignup] = useState(false);
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState(""); // used
+    const [password, setPassword] = useState(""); // used
 
+    console.log(email, password);
     const [selectedOutfit, setSelectedOutfit] = useState(null);
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
@@ -90,6 +91,7 @@ function App() {
             alert("Failed to load orders");
         }
     };
+    console.log(fetchOrders);
 
 
     const [viewItem, setViewItem] = useState(null)
